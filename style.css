@@ -100,7 +100,7 @@ body {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    max-height: 60vh;
+    max-height: 66vh;
     overflow-y: scroll;
 }
 
@@ -175,20 +175,20 @@ body {
 
 .playbar {
     position: fixed;
-    background-color: red;
-    width: calc(100vw - 420px);
+    background-color: #312f2f;
+    width: calc(100% - 420px);
     padding: 12px;
-    bottom: 8px;
+    bottom: 2%;
     border-radius: 10px;
-    height: 42px;
+    height: 80px;
 }
 
 .seekbar {
     border: 1px solid rgb(255, 255, 255);
     height: 4px;
-    width: calc(100vw - 420px);
+    width: calc(100% - 46px);
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     border-radius: 20px;
     margin: 10px 0px;
     background-color: white;
@@ -262,12 +262,33 @@ body {
 
 .songinfo {
     color: white;
-    padding: 0px 12px;
+    padding: 0px 4px;
+    width: 40%;
 }
 
 .songtime {
     color: white;
-    padding: 0px 12px;
+    padding: 0% 0% 0% 0%;
+}
+
+.volume{
+    color: white;
+    padding: 0% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.volume img{
+    height: 24px;
+    justify-content: end;
+}
+.timevol{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
 }
 
 .hamburger {
@@ -292,7 +313,12 @@ body {
         width: 233px;
         background-color: black;
         height: 100vh;
+        padding: 0px;
     }
+
+   /*  .info div{
+        word-break: break-all;
+    } */
 
     .close{
         display: block;
@@ -304,7 +330,7 @@ body {
 
     .playbar {
         width: calc(100vw - 40px);
-        height: 100px;
+        height: 140px;
     }
     .seekbar{
         width: calc(100vw - 60px);
@@ -332,5 +358,33 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+
+    .songinfo{
+        width: auto;
+    }
+
+    .timevol{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .songtime {
+        color: white;
+        padding: 0px;
+        width: auto;
+    }
+    
+    .volume{
+        color: white;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        align-items: center;
     }
 }
